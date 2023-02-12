@@ -1,0 +1,87 @@
+<!DOCTYPE css>
+<css>
+
+<style type="text/css">
+    .section {
+        display: none;
+    }
+	
+	.responsive {
+		width: 100%;
+		height: auto;
+	}
+	
+	.column {
+	float: left;
+	}
+	
+	/* Clear floats after the columns */
+	.row:after {
+	content: "";
+	display: table;
+	clear: both;
+	}
+	
+	.left {
+	width: 45%;
+	}
+	
+	.right {
+	width: 55%;
+	}
+	
+	.equalcolumn {
+	float: left;
+	width: 50%;
+	}
+	
+	.colorwhite {
+		color : white;
+	}
+	
+	img {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		padding: 0.5vw;
+		border-radius: 30%;
+	}
+	
+	.accordion {
+		background-color: grey;
+		color: white;
+		cursor: pointer;
+		padding: 1.2vw;
+		width: 100%;
+		border: none;
+		text-align: left;
+		outline: none;
+		font-size: w3-large;
+		transition: 0.8s;
+	}
+		
+	.active, .accordion:hover {
+		background-color: teal;
+	}
+	
+	.accordion:after {
+		content: '\002B';
+		color: white;
+		font-weight: bold;
+		float: left;
+	}
+
+	.active:after {
+		content: "\2212";
+	}
+		
+	.panel {
+		padding: 1.2vw;
+		background-color: w3-white;
+		max-height: 0;
+		overflow: hidden;
+		transition: max-height 0.8s ease-out;
+	}
+	
+</style>
+</css>
